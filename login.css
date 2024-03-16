@@ -1,0 +1,102 @@
+body.bo{
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+body.bo {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background: #000;
+}
+.wraapper:hover {
+position: relative;
+width: 400px;
+height: 500px;
+background: #000;
+box-shadow: 0 0 50px rgb(13, 243, 251);
+border-radius: 20px;
+padding: 40px;
+overflow: hidden;
+transition: 1s ease-in-out;
+}
+
+.form-wraapper {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100%;
+transition: 1s ease-in-out;
+}
+.wraapper.active .form-wraapper.sign-in {
+transform: translateY(-450px);
+}
+
+
+h2#h22{
+font-size: 30px;
+color: #fff;
+text-align: center;
+}
+.input-group {
+position: relative;
+margin: 30px 0;
+border-bottom: 2px solid #fff;
+}
+.input-group label {
+position: absolute;
+top: 50%;
+left: 5px;
+transform: translateY(-50%);
+font-size: 16px;
+color: #fff;
+pointer-events: none;
+transition: .5s;
+}
+.input-group input {
+width: 320px;
+height: 40px;
+font-size: 16px;
+color: #fff;
+padding: 0 5px;
+background: transparent;
+border: none;
+outline: none;
+}
+.input-group input:focus~label,
+.input-group input:valid~label {
+top: -5px;
+}
+.remember {
+margin: -5px 0 15px 5px;
+}
+.remember label {
+color: #fff;
+font-size: 14px;
+}
+.remember label input {
+accent-color: rgb(13, 195, 251);
+}
+button {
+position: relative;
+width: 100%;
+height: 40px;
+background: rgb(13, 251, 239);
+box-shadow: 0 0 10px rgb(13, 235, 251);
+font-size: 16px;
+color: #000;
+font-weight: 500;
+cursor: pointer;
+border-radius: 30px;
+border: none;
+outline: none;
+}
+@media screen and (max-width: 600px) {
+    .form-wraapper {
+      width: 90%;
+      margin: auto;
+    }
+  }
